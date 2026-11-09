@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm --filter @cloudflare/kumo-docs-astro build",
+    "build": "pnpm --filter @cloudflare/kumo build && pnpm --filter @cloudflare/kumo-docs-astro build",
     "codegen": "pnpm --filter @cloudflare/kumo-docs-astro codegen:demos && pnpm --filter @cloudflare/kumo codegen",
     "build:all": "pnpm -r build",
     "ci:typecheck": "tsc -p ci/tsconfig.json --noEmit",
