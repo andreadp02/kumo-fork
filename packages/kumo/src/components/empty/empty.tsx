@@ -45,7 +45,7 @@ export function emptyVariants({
   size = KUMO_EMPTY_DEFAULT_VARIANTS.size,
 }: KumoEmptyVariantsProps = {}) {
   return cn(
-    "flex w-full flex-col items-center rounded-xl border border-kumo-fill bg-kumo-control text-kumo-default",
+    "flex w-full flex-col items-center rounded-xl border-2 border-dashed border-kumo-fill bg-kumo-control text-kumo-default",
     resolveVariant(
       KUMO_EMPTY_VARIANTS.size,
       size,
